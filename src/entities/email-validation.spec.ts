@@ -35,4 +35,9 @@ describe('Email validation', () => {
     const email = '@mail.com'
     expect(Email.validade(email)).toBeFalsy()
   })
+
+  test('should not accept empty domain', () => {
+    const email = 'any@'
+    expect(Email.validade(email)).toBeFalsy()
+  })
 })
