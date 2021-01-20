@@ -1,4 +1,4 @@
-import { UserData } from '../../../entities/user-data'
+import { UserData } from '../../../../src/entities/user-data'
 import { InMemoryUserRepository } from './in-memoru-user-repository'
 
 describe('In memory User repository', () => {
